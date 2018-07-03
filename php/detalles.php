@@ -8,7 +8,7 @@
     // Buscar pelicula por ID
     $query = "SELECT * FROM peliculas where idPelicula = '$id'";
     $rQuery = $conexion->query($query);
-
+    // Y las guardamos en un arreglo JSON
     $arreglo = array();
 	while($pelicula = $rQuery->fetch_object()){
 

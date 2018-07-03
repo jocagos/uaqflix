@@ -1,13 +1,21 @@
+/* Estilos en general */
+
 * {
     margin: 0;
     padding: 0;
 }
+
+
+/* Colores base */
 
 :root {
     --color-principal: #a6c0fe;
     --color-contraste: white;
     --color-fondo: #519ABA;
 }
+
+
+/* Barra de navegacion */
 
 nav.navbar {
     position: fixed;
@@ -32,6 +40,9 @@ nav.navbar>h1 {
 nav.navbar>h1:hover {
     cursor: pointer;
 }
+
+
+/* Divs */
 
 div.login {
     height: 120px;
@@ -116,6 +127,9 @@ nav.navbar>i {
     line-height: 60px !important;
     margin-left: 15px;
 }
+
+
+/* PAra las peliculas */
 
 section {
     position: fixed;

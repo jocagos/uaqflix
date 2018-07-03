@@ -93,10 +93,11 @@ function _buscar() {
             }
         }
     } else {
+        // Si no hay qué mostrar, mostramos el catálogo normal
         cargarPeliculas();
     }
 }
-
+// Función para dormir procesos JS un momento, utilizada para debuggear más que nada
 function sleep(milliseconds) {
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
@@ -135,17 +136,11 @@ function login() {
                 }, 2000)
             }
         }
-        // else {
-        //     alert("Los datos ingresados son incorrectos, favor de verificar.");
-        //     setTimeout(function() {
-        //         document.querySelector('.respuesta').style.opacity = "0";
-        //     }, 3000)
-        // }
     }
 }
 // Función para registrar un nuevo usuario
 function registrarse() {
-
+    // Hubo que renombrar algunos ID debido a que no eran únicos
     usuario = document.getElementById('usuarioR').value;
     correo = document.getElementById('correoR').value;
     password = document.getElementById('passwordR').value;
@@ -162,9 +157,9 @@ function registrarse() {
                 document.querySelector('.respuesta').innerHTML = "Usuario creado con exito, ya puedes iniciar sesión";
 
                 setTimeout(function() {
-                    document.querySelector('.respuesta').style.opacity = "0";
-                }, 2000)
-
+                        document.querySelector('.respuesta').style.opacity = "0";
+                    }, 2000)
+                    // volvemos al index
                 setTimeout(function() {
                     window.location.assign("index.html");
                 }, 3000)
@@ -271,7 +266,7 @@ function cargarDetalles() {
         }
     }
 }
-
+// Sólo es para mostrar algo en la página de inicio
 function acerca() {
     alert('UAQflix Inc. proporciona servicios de streaming gratuitos.');
 }

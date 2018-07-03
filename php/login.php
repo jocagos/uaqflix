@@ -35,11 +35,4 @@
 		}
 
 	}
-
-	// if(mysqli_num_rows($rQuery)!=0){
-	// 	$r=$rQuery->fetch_object();
-	// 	echo $r->idUsuario;	
-	// }else{
-	// 	echo "0";
-	// }
 ?>
